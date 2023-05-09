@@ -29,7 +29,12 @@ header
     &__logo
         font-size: 24px
         font-weight: 600
-        border-bottom: 2px solid rgb(0,117,255)
+        border-bottom: 2px solid #e8e8e8
+        transition: .125s
+        &:hover
+            border-bottom: 2px solid rgb(0,117,255)
+        &-active
+            border-bottom: 2px solid rgb(0,117,255)
     &__link
         margin: 0 20px
         color: #000
@@ -281,3 +286,109 @@ footer
         padding: 20px 40px
         color: gray
         text-align: justify
+
+.reg
+    min-height: 70vh
+    background: #f8f8f8
+    padding: 150px 0 75px
+    &__content
+        transition: .25s
+        opacity: 0
+        animation: showText .25s 1
+        animation-fill-mode: forwards
+        animation-delay: 1.25s
+        max-width: 325px
+        margin: 0 auto
+        padding: 20px
+        border: 2px solid rgb(0,117,255)
+        border-radius: 10px
+    &__inp
+        width: calc(100% - 20px)
+        font-size: 18px
+        font-weight: 500
+        padding: 5px 10px
+        margin-bottom: 10px
+        border-radius: 5px
+        border: 1px solid gray
+    &__legend
+        text-align: center
+        font-size: 24px
+        font-weight: 500
+        margin-bottom: 20px
+        color: rgb(0,117,255)
+    &__label
+        font-size: 14px
+        font-weight: 300
+        color: gray
+    &__btn
+        display: inline
+        padding: 5px 10px
+        font-size: 18px
+        border: 1px solid rgb(0,117,255)
+        cursor: pointer
+        background: #fff
+        transition: .15s
+        &:hover
+            background: rgb(0,117,255)
+            color: #fff
+        &_block
+            padding-top: 10px
+            text-align: center
+
+.login
+    padding: 150px 0
+    min-height: 60vh
+
+.profile
+    min-height: 70vh
+    background: #f8f8f8
+    padding: 150px 0 75px
+    &__content
+        transition: .25s
+        opacity: 0
+        animation: showText .25s 1
+        animation-fill-mode: forwards
+        animation-delay: 1.25s
+        max-width: 1024px
+        margin: 0 auto
+    &__flex
+        display: flex
+        justify-content: space-between
+        vertical-align: top
+    &__title
+        font-size: 14px
+        font-weight: 300
+        display: block
+        color: gray
+        padding: 10px 0 5px
+    &__data
+        &_text
+            font-size: 18px
+            font-weight: 500
+    &__btns
+        padding-top: 20px
+    &__btn
+        padding: 5px 10px
+        font-size: 14px
+        text-decoration: none
+        border: 1px solid rgb(0,117,255)
+        cursor: pointer
+        background: #fff
+        transition: .15s
+        color: rgb(0,117,255)
+        &:hover
+            background: rgb(0,117,255)
+            color: #fff
+    &__book
+        width: 40%
+        &_card
+            border-top: 2px solid #e8e8e8
+            border-bottom: 2px solid #e8e8e8
+            margin-bottom: 30px
+            padding: 5px
+        &_title
+            display: inline
+            line-height: 28px
+        &_data
+            display: inline
+            line-height: 28px

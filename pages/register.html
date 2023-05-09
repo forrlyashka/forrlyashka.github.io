@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../images/icons/fav.svg">
+    <title>Главная | Регистрация</title>
+</head>
+<body>
+    <header>
+        <div class="header__content">
+            <a href="../index.html" class="header__logo">
+                <img src="../images/icons/logotype.png" alt="Логотип" class="header__logo_image">
+            </a>
+            <nav>
+                <a href="branches.html" class="nav__link">Филиалы</a>
+                <a href="booking.html" class="nav__link">Бронирование</a>
+            </nav>
+            <a href="profile.html" class="header__link">Личный Кабинет</a>
+        </div>
+    </header>
+    <section class="reg">
+        <div class="reg__content">
+            <form action="login.html" class="reg__form">
+                <legend class="reg__legend">Регистрация</legend>
+                <label for="name" class="reg__label">Имя</label><br>
+                <input type="text" class="reg__inp" id="name" required><br>
+                <label for="surname" class="reg__label">Фамилия</label><br>
+                <input type="text" class="reg__inp" id="surname" required><br>
+                <label for="midname" class="reg__label">Отчество</label><br>
+                <input type="text" class="reg__inp" id="midname" required><br>
+                <label for="pass" class="reg__label">Серия и номер паспорта</label><br>
+                <input type="text" class="reg__inp" id="pass" required><br>
+                <label for="phone" class="reg__label">Телефон</label><br>
+                <input type="text" class="reg__inp" id="phone" required><br>
+                <label for="brth" class="reg__label">Дата Рождения</label><br>
+                <input type="date" class="reg__inp" id="brth" required><br>
+                <label for="password" class="reg__label">Пароль</label><br>
+                <input type="password" class="reg__inp" required id="password"><br>
+                <label for="sec-password" class="reg__label">Повтор пароля</label><br>
+                <input type="password" class="reg__inp" required id="sec-password"><br>
+                <div class="reg__btn_block">
+                    <input type="submit" value="Зарегистрироваться" class="reg__btn">
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer__content">
+            <a href="tel:+78005553535" class="footer__phone">8 (800) 555-35-35<br>Индекс Драйв</a>
+            <div class="footer__links">
+                <div class="footer__links_mini">
+                    <a href="index.html" class="footer__link">Главная</a>
+                    <a href="login.html" class="footer__link">Вход</a>
+                    <a href="register.html" class="footer__link">Регистрация</a>
+                </div>
+                <div class="footer__links_mini">
+                    <a href="profile.html" class="footer__link">Личный Кабинет</a>
+                    <a href="booking.html" class="footer__link">Бронирование</a>
+                    <a href="history.html" class="footer__link">История</a>
+                </div>
+                <div class="footer__links_mini">
+                    <a href="branches.html" class="footer__link">Филиалы</a>
+                    <a href="cards.html" class="footer__link">Способы Оплаты</a>
+                    <a href="car-select.html" class="footer__link">Выбор Автомобиля</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

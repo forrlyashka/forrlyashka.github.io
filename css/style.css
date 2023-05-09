@@ -43,6 +43,16 @@ header {
 .header__logo {
   font-size: 24px;
   font-weight: 600;
+  border-bottom: 2px solid #e8e8e8;
+  -webkit-transition: .125s;
+  transition: .125s;
+}
+
+.header__logo:hover {
+  border-bottom: 2px solid #0075ff;
+}
+
+.header__logo-active {
   border-bottom: 2px solid #0075ff;
 }
 
@@ -439,5 +449,163 @@ footer {
   padding: 20px 40px;
   color: gray;
   text-align: justify;
+}
+
+.reg {
+  min-height: 70vh;
+  background: #f8f8f8;
+  padding: 150px 0 75px;
+}
+
+.reg__content {
+  -webkit-transition: .25s;
+  transition: .25s;
+  opacity: 0;
+  -webkit-animation: showText .25s 1;
+          animation: showText .25s 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+  max-width: 325px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #0075ff;
+  border-radius: 10px;
+}
+
+.reg__inp {
+  width: calc(100% - 20px);
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.reg__legend {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #0075ff;
+}
+
+.reg__label {
+  font-size: 14px;
+  font-weight: 300;
+  color: gray;
+}
+
+.reg__btn {
+  display: inline;
+  padding: 5px 10px;
+  font-size: 18px;
+  border: 1px solid #0075ff;
+  cursor: pointer;
+  background: #fff;
+  -webkit-transition: .15s;
+  transition: .15s;
+}
+
+.reg__btn:hover {
+  background: #0075ff;
+  color: #fff;
+}
+
+.reg__btn_block {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.login {
+  padding: 150px 0;
+  min-height: 60vh;
+}
+
+.profile {
+  min-height: 70vh;
+  background: #f8f8f8;
+  padding: 150px 0 75px;
+}
+
+.profile__content {
+  -webkit-transition: .25s;
+  transition: .25s;
+  opacity: 0;
+  -webkit-animation: showText .25s 1;
+          animation: showText .25s 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.profile__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  vertical-align: top;
+}
+
+.profile__title {
+  font-size: 14px;
+  font-weight: 300;
+  display: block;
+  color: gray;
+  padding: 10px 0 5px;
+}
+
+.profile__data_text {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.profile__btns {
+  padding-top: 20px;
+}
+
+.profile__btn {
+  padding: 5px 10px;
+  font-size: 14px;
+  text-decoration: none;
+  border: 1px solid #0075ff;
+  cursor: pointer;
+  background: #fff;
+  -webkit-transition: .15s;
+  transition: .15s;
+  color: #0075ff;
+}
+
+.profile__btn:hover {
+  background: #0075ff;
+  color: #fff;
+}
+
+.profile__book {
+  width: 40%;
+}
+
+.profile__book_card {
+  border-top: 2px solid #e8e8e8;
+  border-bottom: 2px solid #e8e8e8;
+  margin-bottom: 30px;
+  padding: 5px;
+}
+
+.profile__book_title {
+  display: inline;
+  line-height: 28px;
+}
+
+.profile__book_data {
+  display: inline;
+  line-height: 28px;
 }
 /*# sourceMappingURL=style.css.map */
