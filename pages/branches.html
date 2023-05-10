@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../images/icons/fav.svg">
-    <title>Главная | Регистрация</title>
+    <title>Главная | Филиалы</title>
 </head>
 <body>
     <header>
@@ -15,36 +15,16 @@
                 <img src="../images/icons/logotype.png" alt="Логотип" class="header__logo_image">
             </a>
             <nav>
-                <a href="branches.html" class="nav__link">Филиалы</a>
-                <a href="booking.html" class="nav__link">Бронирование</a>
+                <a class="nav__link nav__link-active">Филиалы</a>
+                <a class="nav__link" href="booking.html">Бронирование</a>
             </nav>
             <a href="profile.html" class="header__link">Личный Кабинет</a>
         </div>
     </header>
-    <section class="reg">
-        <div class="reg__content">
-            <form action="login.html" class="reg__form">
-                <legend class="reg__legend">Регистрация</legend>
-                <label for="name" class="reg__label">Имя</label><br>
-                <input type="text" class="reg__inp" id="name" required><br>
-                <label for="surname" class="reg__label">Фамилия</label><br>
-                <input type="text" class="reg__inp" id="surname" required><br>
-                <label for="midname" class="reg__label">Отчество</label><br>
-                <input type="text" class="reg__inp" id="midname" required><br>
-                <label for="pass" class="reg__label">Серия и номер паспорта</label><br>
-                <input type="text" class="reg__inp" id="pass" required><br>
-                <label for="phone" class="reg__label">Телефон</label><br>
-                <input type="text" class="reg__inp" id="phone" required><br>
-                <label for="brth" class="reg__label">Дата Рождения</label><br>
-                <input type="date" class="reg__inp" id="brth" required><br>
-                <label for="password" class="reg__label">Пароль</label><br>
-                <input type="password" class="reg__inp" required id="password"><br>
-                <label for="sec-password" class="reg__label">Повтор пароля</label><br>
-                <input type="password" class="reg__inp" required id="sec-password"><br>
-                <div class="reg__btn_block">
-                    <input type="submit" value="Зарегистрироваться" class="reg__btn">
-                </div>
-            </form>
+    <section class="br">
+        <div class="br__content">
+            <h3 class="br__title">Наши Филиалы</h3>
+            <div id="map" style="width: 1024px; height: 600px"></div>
         </div>
     </section>
     <footer>
@@ -69,5 +49,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="../scripts/maps.js"></script>
 </body>
 </html>

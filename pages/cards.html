@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../images/icons/fav.svg">
+    <title>Главная | Способы оплаты</title>
+</head>
+<body>
+    <header>
+        <div class="header__content">
+            <a href="../index.html" class="header__logo">
+                <img src="../images/icons/logotype.png" alt="Логотип" class="header__logo_image">
+            </a>
+            <nav>
+                <a href="branches.html" class="nav__link">Филиалы</a>
+                <a class="nav__link" href="booking.html">Бронирование</a>
+            </nav>
+            <a href="profile.html" class="header__link">Личный Кабинет</a>
+        </div>
+    </header>
+    <section class="cards">
+        <div class="cards__content">
+            <div class="cards__header">
+                Банковские карты
+            </div>
+            <div class="cards__block">
+                <div class="cards__item">
+                    <img src="../images/card/mir.png" alt="Тип Карты" class="cards__type">
+                    <br>
+                    <span class="cards__num">
+                        **** **** **** 4984
+                    </span>
+                    <br>
+                    <span class="cards__active cards__active-no">
+                        Неактивна
+                    </span>
+                    <br>
+                    <a href="#" class="cards__del">
+                        Отвязать карту
+                    </a>
+                </div>
+                <div class="cards__item">
+                    <img src="../images/card/visa.png" alt="Тип Карты" class="cards__type">
+                    <br>
+                    <span class="cards__num">
+                        **** **** **** 5643
+                    </span>
+                    <br>
+                    <span class="cards__active">
+                        Активна
+                    </span>
+                    <br>
+                    <a href="#" class="cards__del">
+                        Отвязать карту
+                    </a>
+                </div>
+                <div class="cards__item cards__item_anim">
+                    <div class="cards__add">
+                        +
+                    </div>
+                    <span class="cards__add_text">
+                        Добавить
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="modal">
+        <div class="modal__content">
+            <span class="modal__close">
+                x
+            </span>
+            <form action="#" class="reg__form">
+                <legend class="reg__legend">Добавление карты</legend>
+                <label for="nameHolder" class="reg__label">Имя и Фамилия владельца</label><br>
+                <input type="text" class="reg__inp" id="nameHolder" required><br>
+                <label for="numCard" class="reg__label">Номер карты</label><br>
+                <input type="number" class="reg__inp" id="numCard" required><br>
+                <label for="dataOff" class="reg__label">Дата окончания карты</label><br>
+                <input type="number" class="reg__inp" id="dataOff" required><br>
+                <label for="cvv" class="reg__label">Код CVV/CVC</label>
+                <input type="number" class="reg__inp" id="cvv" required><br>
+                <div class="reg__btn_block">
+                    <input type="submit" value="Добавить" class="reg__btn">
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer__content">
+            <a href="tel:+78005553535" class="footer__phone">8 (800) 555-35-35<br>Индекс Драйв</a>
+            <div class="footer__links">
+                <div class="footer__links_mini">
+                    <a href="../index.html" class="footer__link">Главная</a>
+                    <a href="login.html" class="footer__link">Вход</a>
+                    <a href="register.html" class="footer__link">Регистрация</a>
+                </div>
+                <div class="footer__links_mini">
+                    <a href="profile.html" class="footer__link">Личный Кабинет</a>
+                    <a href="booking.html" class="footer__link">Бронирование</a>
+                    <a href="history.html" class="footer__link">История</a>
+                </div>
+                <div class="footer__links_mini">
+                    <a href="branches.html" class="footer__link">Филиалы</a>
+                    <a href="cards.html" class="footer__link">Способы Оплаты</a>
+                    <a href="car-select.html" class="footer__link">Выбор Автомобиля</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../scripts/cards.js"></script>
+</body>
+</html>
